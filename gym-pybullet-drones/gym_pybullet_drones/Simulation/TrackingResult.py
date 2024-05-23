@@ -2,7 +2,7 @@ from stable_baselines3 import SAC
 import time
 
 import sys
-sys.path.append('/home/youssefmahran2/Desktop/Youssef_Mahran_2024_Quadcopter_RL/gym-pybullet-drones')
+sys.path.append('')
 
 from gym_pybullet_drones.envs.BaseAviary import DroneModel, Physics
 from gym_pybullet_drones.envs.BaseRLAviary import ActionType, ObservationType
