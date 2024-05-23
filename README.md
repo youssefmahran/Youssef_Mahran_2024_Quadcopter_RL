@@ -10,7 +10,7 @@
 ```
 - Activate the virtual environment
 ```
-conda activate myenv
+conda activate drones
 ```
 - Download the following libraries:
 	- numpy
