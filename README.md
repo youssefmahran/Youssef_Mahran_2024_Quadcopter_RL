@@ -1,4 +1,4 @@
-### Soft Actor-Critic Position Controller
+# Soft Actor-Critic Position Controller
 ## REQUIREMENTS 
 - Download Python >=3.8
 - Download Anaconda
