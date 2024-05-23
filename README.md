@@ -25,7 +25,7 @@ conda activate myenv
 pip install numpy matplotlib pybullet gymnasium pillow cycler stable-baselines3[extra] torch torchvision torchaudio 
 ```
 ## USE
-Open `Helix.py`, `InfinitySymbol.py`, `StabilizationResult.py` and `TrackingResult.py` found in [envs folder](gym-pybullet-drones/gym_pybullet_drones/envs) and add the path of "gym_pybullet_drones" folder to line 5. 
+Open `Helix.py`, `InfinitySymbol.py`, `StabilizationResult.py` and [`TrackingResult.py`](gym-pybullet-drones/gym_pybullet_drones/envs/TrackingResult.py) found in [envs folder](gym-pybullet-drones/gym_pybullet_drones/envs) and add the path of "gym_pybullet_drones" folder to line 5. 
 For example:
 ```
    sys.path.append('/home/youssefmahran2/Desktop/Youssef_Mahran_2024_Quadcopter_RL/gym-pybullet-drones/')
