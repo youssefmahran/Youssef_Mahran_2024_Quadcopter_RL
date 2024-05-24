@@ -1,0 +1,61 @@
+\documentclass{report}
+\title{titlepage}
+\author{Youssef Mahran}
+\date{February 2024}
+\usepackage[headings] {fullpage}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{acronym}
+\usepackage{url}
+\usepackage{relsize}
+\usepackage[titles]{tocloft}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[pdfborder={0 0 0}, colorlinks=true, linkcolor=black, citecolor=black, urlcolor= black]{hyperref}
+
+
+\renewcommand{\bibname}{References}
+\bibliographystyle{ieeetr}
+
+
+\makeatletter
+\renewcommand*\l@section{
+  \@dottedtocline{2}{1.5em}{2.2em} % Adjust these values as needed
+}
+\makeatother
+\makeatletter
+\renewcommand*\l@figure{
+  \@dottedtocline{2}{1.5em}{2.5em} % Adjust these values as needed
+}
+\makeatother
+
+
+\renewcommand{\cftchapleader}{\textbf{\cftdotfill{\cftsecdotsep}}}
+\setlength{\parindent}{0pt}
+\begin{document}
+\include{Sections/title_page}
+\setcounter{page}{1}
+\pagenumbering{roman}
+\large
+\doublespacing 
+\include{Sections/Abstract}
+\include{Sections/Declaration}
+\include{Sections/Acknowldgement}
+\include{Sections/TOC}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\include{Chapters/Intro}
+\include{Chapters/Literature}
+\include{Chapters/Methodology}
+\include{Chapters/Results}
+\include{Chapters/Conc}
+\include{Chapters/Future}
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{References/bibliography}
+\end{document}
