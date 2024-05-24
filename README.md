@@ -58,7 +58,7 @@ python3 InfinitySymbol.py
 ```
 or
 ```
-cd /the/path/to/Youssef_Mahran_2024_Quadcopter_RL/gym-pybullet-drones/gym_pybullet_drones/Simulation/
+cd /path/to/Youssef_Mahran_2024_Quadcopter_RL/gym-pybullet-drones/gym_pybullet_drones/Simulation/
 conda activate drones
 python3 Helix.py
 ```
