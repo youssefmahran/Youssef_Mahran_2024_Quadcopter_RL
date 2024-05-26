@@ -1,4 +1,4 @@
-# Soft Actor-Critic Position Controller
+# Low-level RPM Controller
 ## REQUIREMENTS 
 - Download Python 3.6
 - Download Anaconda
