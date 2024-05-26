@@ -1,6 +1,5 @@
 ############### REQUIREMENTS ###############
-- Download Python 3
-	- Python 3.8 is recommended
+- Download Python >=3.8
 - Download Anaconda
 
 ############### INSTALLATION ###############
@@ -8,31 +7,50 @@
 - Create a new virtual environment: "conda create -n drones python=3.8"
 - Activate the virtual environment: "conda activate drones"
 - Download the following libraries:
-	- numpy: "pip install numpy"
-	- matplotlib: "pip install matplotlib"
-	- pybullet: "pip install pybullet"
-	- gym: "pip install gymnasium"
-	- Pillow: "pip install pillow"
-	- Cycler: "pip install cycler"
-	- Stable Baselines3: "pip install stable-baselines3[extra]"
+	- numpy
+	- matplotlib
+	- pybullet
+	- gym
+	- Pillow
+	- Cycler
+	- Stable Baselines3
+	- PyTorch
+	"pip install numpy matplotlib pybullet gymnasium pillow cycler stable-baselines3[extra] torch torchvision torchaudio "
 
 ############### USE ###############
 
+Open Helix.py, InfinitySymbol.py, StabilizationResult.py and TrackingResult.py found in "gym_pybullet_drones/Simulation" folder and add the path of "gym_pybullet_drones" folder to line 5. 
+For example: "sys.path.append('/path/to/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/')"
+
 - To run the stabilization simulation:
-	- open Stabilization.py
-	- open a new terminal
-	- type "$ conda activate drones"
-	- type "$ cd ~/gym-pybullet-drones/gym_pybullet_drones/envs"
-	- type "$ python3 StabilizationResult.py"
+	- Open a new terminal
+	- Run the file using the created virtual environment as the python interpreter using:
+"
+cd /path/to/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/gym_pybullet_drones/Simulation/
+conda activate drones
+python3 StabilizationResult.py
+"
 
 - To run the position tracking simulation:
-	- open a new terminal
-	- type "$ conda activate drones"
-	- type "$ cd ~/gym-pybullet-drones/gym_pybullet_drones/envs"
-	- type "$ python3 TrackingResult.py"
+	- Open a new terminal
+	- Run the file using the created virtual environment as the python interpreter using:
+"
+cd /path/to/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/gym_pybullet_drones/Simulation/
+conda activate drones
+python3 TrackingResult.py
+"
 
 - To run the trajectory tracking simulation:
-	- open a new terminal
-	- type "$ conda activate drones"
-	- type "$ cd ~/gym-pybullet-drones/gym_pybullet_drones/envs"
-	- type "$ python3 InfinitySymbol.py" or "$python3 Helix.py"
+	- Open a new terminal
+	- Run the file using the created virtual environment as the python interpreter using:
+"
+cd /path/to/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/gym_pybullet_drones/Simulation/
+conda activate drones
+python3 InfinitySymbol.py
+"
+or
+"
+cd /path/to/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/gym_pybullet_drones/Simulation/
+conda activate drones
+python3 Helix.py
+"
