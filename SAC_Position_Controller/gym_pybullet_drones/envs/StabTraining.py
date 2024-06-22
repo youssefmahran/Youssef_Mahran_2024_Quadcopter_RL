@@ -66,7 +66,7 @@ if __name__ == "__main__":
     # Start the training
     callback_list = [checkpoint_callback, eval_callback]
     model.learn(
-        total_timesteps=int(20e6),
+        total_timesteps=int(5e6),
         callback=callback_list,
         log_interval=10
     )
