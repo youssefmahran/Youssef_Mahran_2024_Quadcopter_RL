@@ -103,8 +103,6 @@ if __name__ == "__main__":
                             net_arch=[400, 300]
                             )
     
-    # Initialize exploration noise
-    action_noise = NormalActionNoise(mean=np.zeros(train_env.action_space.shape), sigma=0.2 * np.ones(train_env.action_space.shape))
 
     # Load the best stabilization agent and set the environment
     model_path = "results/Stabilization_SAC/best/best_model.zip"
