@@ -273,7 +273,7 @@ class TrackingEnv(BaseRLAviary):
               options : dict = None):
         self.done = False
         p.resetSimulation(physicsClientId=self.CLIENT)
-        self.INIT_XYZS= np.array([[np.random.uniform(-1.5,1.5) , np.random.uniform(-1.5,1.5) ,np.random.uniform(0,2)]])
+        self.INIT_XYZS= np.array([[np.random.uniform(-2.5,2.5) , np.random.uniform(-2.5,2.5) ,np.random.uniform(0,2)]])
         self._housekeeping()
         self._updateAndStoreKinematicInformation()
         self._startVideoRecording()
