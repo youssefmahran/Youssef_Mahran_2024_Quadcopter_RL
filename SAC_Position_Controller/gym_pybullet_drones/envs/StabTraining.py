@@ -39,8 +39,6 @@ if __name__ == "__main__":
                             net_arch=[400, 300]
                             )
     
-    # Initialize exploration noise
-    action_noise = NormalActionNoise(mean=np.zeros(train_env.action_space.shape), sigma=0.2 * np.ones(train_env.action_space.shape))
 
     # Initialize model
     model = SAC(
@@ -49,7 +47,6 @@ if __name__ == "__main__":
         learning_rate=7e-4,
         buffer_size=1000000,
         batch_size=256,
-        action_noise=action_noise,
         gamma=0.99,
         tensorboard_log=os.path.join(save_dir, 'tb/'),
         device="cuda" if torch.cuda.is_available() else "cpu",
