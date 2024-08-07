@@ -44,7 +44,7 @@ class TrajectoryEnv(BaseRLAviary):
         self.bounding_box = bounding_box
         self.first_call = first_call
         self.last_last_clipped_action = self.last_clipped_action[0]
-        path = '/home/youssefmahran2/Desktop/Youssef_Mahran_2024_Quadcopter_RL/gym-pybullet-drones/gym_pybullet_drones/envs/traj2.csv'
+        path = '/home/youssef/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/gym_pybullet_drones/envs/trajectories/traj2.csv'
         self.points = genfromtxt(path,delimiter=',')
         self.waypoint = 0
 

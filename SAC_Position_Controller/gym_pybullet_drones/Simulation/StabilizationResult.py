@@ -2,7 +2,7 @@ from stable_baselines3 import SAC
 import time
 
 import sys
-sys.path.append('')
+sys.path.append('/home/youssef/Youssef_Mahran_2024_Quadcopter_RL/SAC_Position_Controller/')
 
 from gym_pybullet_drones.envs.BaseAviary import DroneModel, Physics
 from gym_pybullet_drones.envs.BaseRLAviary import ActionType, ObservationType
@@ -24,7 +24,7 @@ train_env = StabilizationEnv(drone_model=DroneModel.CF2X,
                  )
 
 # Load your trained RL model
-model_path = "results/Tracking/best/best_model.zip"
+model_path = "results/Stabilization/best/best_model.zip"
 model = SAC.load(model_path)
 
 # Reset the environment
