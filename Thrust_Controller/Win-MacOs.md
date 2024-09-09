@@ -22,7 +22,7 @@ conda activate drones
 	- Stable Baselines3
 	- PyTorch
 ```
-pip install numpy matplotlib pybullet gymnasium pillow cycler stable-baselines3[extra] torch torchvision torchaudio 
+pip install numpy matplotlib pybullet gymnasium pillow cycler stable-baselines3[extra] torch torchvision torchaudio scipy
 ```
 ## USE
 Open `Helix.py`, `InfinitySymbol.py`, `StabilizationResult.py` and `TrackingResult.py` found in `Thrust_Controller/Simulaton` folder and add the path of "gym_pybullet_drones" folder to line 5.  
