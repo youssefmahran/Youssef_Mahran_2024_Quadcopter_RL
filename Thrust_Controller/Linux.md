@@ -1,7 +1,7 @@
 # Soft Actor-Critic Thrust Vector Controller
 ## REQUIREMENTS 
 - Download and install [Anaconda](https://www.anaconda.com/download/success)
-- Download [Thrust.zip](Thrust.zip) and unzip the files
+- Download [Thrust_Controller.zip](Thrust_Controller.zip) and unzip the files
 ## INSTALLATION
 - Open a new terminal
 - Create a new virtual environment
