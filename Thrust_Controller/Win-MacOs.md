@@ -36,7 +36,7 @@ For example:
 ```
 cd /path/to/Thrust_Controller/Simulation/
 conda activate drones
-python3 StabilizationResult.py
+python StabilizationResult.py
 ```
 
 - To run the position tracking simulation:
@@ -45,7 +45,7 @@ python3 StabilizationResult.py
 ```
 cd /path/to/Thrust_Controller/Simulation/
 conda activate drones
-python3 TrackingResult.py
+python TrackingResult.py
 ```
 
 - To run the trajectory tracking simulation:
@@ -54,11 +54,11 @@ python3 TrackingResult.py
 ```
 cd /path/to/Thrust_Controller/Simulation/
 conda activate drones
-python3 InfinitySymbol.py
+python InfinitySymbol.py
 ```
 or
 ```
 cd /path/to/Thrust_Controller/Simulation/
 conda activate drones
-python3 Helix.py
+python Helix.py
 ```
